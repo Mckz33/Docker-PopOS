@@ -66,7 +66,6 @@ See the docker-compose version
 docker-compose --version
 ```
 
-Ref: https://linuxhint.com/install-docker-on-pop_os/
 
 Add group permissions
 
