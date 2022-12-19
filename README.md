@@ -6,15 +6,20 @@ comandos para instalação do docker no popOS
 # Installation of the Docker through the repository in Pop!_OS
 
 ```
-sudo apt update
-sudo apt install  ca-certificates  curl  gnupg  lsb-release
+sudo apt-get update
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
 ```
 
 
 Download the GPG key of the Docker from its website and add it to the repository of Pop!_OS:
 
 ```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
 
 
